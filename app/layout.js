@@ -28,12 +28,34 @@ function Menu({children, x, y}){
   );
 }
 
+function Contato({telefone}){
+  return(
+    <div className={styles.contato}>
+      <img src='phone_icon.png' alt='Phone'/>
+      <span>{telefone}</span>
+    </div>
+  );
+}
+
+
+function Titulo({x,y}){
+  return(
+    <h1 style={{left: x, top: y}}className={styles.titulo}>Your perfect honeymoon</h1>
+  );
+}
+
+function Texto({x,y}){
+  return(
+    <h2 style={{left: x, top: y}}className={styles.texto}>Mayami is more than a honeymoon destination – it's a perfect romantic spot for couples who like  spending time in beach.</h2>
+  );
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body> 
         
-        <header>
+        <header className={styles.cabecalho}>
           <Logo x = {135} y = {53}/>
           
           <Menu x = {435} y = {60}>
@@ -43,13 +65,19 @@ export default function RootLayout({ children }) {
             <ItemMenu  nome = "Contact"/>
             <ItemMenu  nome = "Blog"/>
             <ItemMenu  nome = "Vídeo"/>
-          
+                      
           </Menu>
+         
+         <Contato className={styles.contato} telefone={'+38(097)8849989'}/>
 
+         
         </header>
         
         
         <main>
+          <Titulo x = {135} y = {238}></Titulo>
+
+          <Texto x = {135} y = {465.4}></Texto>
           {children}
         </main>
         

@@ -1,6 +1,21 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 53px;
+    left: 135px;
+    width: 50%;
+    /* border: 1px solid white; */
+}
+.contato{
+    display: flex;
+    font-size: 19.205px;
+}
+
 .logo{
     font-size: 34.375px;
-    position: absolute;
+    /* position: absolute; */
     /* 1 solução para margem
     margin-bottom: 0;
     margin-top: 0;
@@ -12,9 +27,11 @@
 
 .menu{
     display: flex; /* posicionamento horizontal do menu*/
+    flex-direction: row;
+    gap: 30px ;
     justify-content: space-between;
     list-style-type: none;
-    position:absolute;
+    /* position:absolute; */
     margin: 0; /* retirar as margens*/
     padding: 0; /* retira os padding*/
     width: 570px;
@@ -32,4 +49,35 @@
     margin-top: 0;
     margin-bottom: 0;
     
+}
+
+.titulo{
+    width: 521.135px;
+    height: 191.042px;
+    
+    font-family: Montserrat;
+    font-size: 78.65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133%; /* 104.605px */
+    letter-spacing: 1.966px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+}
+
+.texto{
+    width: 543.047px;
+    height: 102.893px;
+    
+    font-family: Montserrat;
+    font-size: 20.285px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%; /* 34.485px */
+    letter-spacing: 0.304px;
+    position: absolute;
+    margin-top: ;
+    padding: 0;
 }
