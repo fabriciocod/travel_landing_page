@@ -1,83 +1,106 @@
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
+.logo {
     top: 53px;
     left: 135px;
-    width: 50%;
-    /* border: 1px solid white; */
-}
-.contato{
-    display: flex;
-    font-size: 19.205px;
-}
-
-.logo{
+    right: 1129px;
+    bottom: 804.37px;
     font-size: 34.375px;
-    /* position: absolute; */
-    /* 1 solução para margem
+    font-weight: 700;
     margin-bottom: 0;
     margin-top: 0;
-    */
-    
-    margin: 0; /* 2 solução para margem*/
-    
+    position: absolute;
 }
 
-.menu{
-    display: flex; /* posicionamento horizontal do menu*/
-    flex-direction: row;
-    gap: 30px ;
-    justify-content: space-between;
-    list-style-type: none;
-    /* position:absolute; */
-    margin: 0; /* retirar as margens*/
-    padding: 0; /* retira os padding*/
-    width: 570px;
-    
-}
-
-.comercial{
+.comercial {
     color: #FFB9AF;
 }
 
-.itemMenu {
-    /*font-family: Montserrat;*/
-    font-size: 24.527px;
-    font-weight: 500;
-    margin-top: 0;
+.menu {
+
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
     margin-bottom: 0;
-    
+    margin-top: 0;
+    padding-left: 0;
+    position: absolute;
+    width: 570px;
 }
 
-.titulo{
+.itemMenu {
+    font-family: Montserrat;
+    font-size: 24.527px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.titulo {
+    position: absolute;
+    top: 238px;
+    left: 135px;
+    right: 783.87px;
+    bottom: 470.96px;
     width: 521.135px;
     height: 191.042px;
-    
+    color: #FFF;
     font-family: Montserrat;
     font-size: 78.65px;
     font-style: normal;
     font-weight: 600;
-    line-height: 133%; /* 104.605px */
+    line-height: 133%;
     letter-spacing: 1.966px;
-    position: absolute;
     margin: 0;
-    padding: 0;
 
 }
 
-.texto{
+
+.texto {
+
+    position: absolute;
+    top: 465.04px;
+    left: 136px;
+    right: 760.95px;
+    bottom: 332.06px;
     width: 543.047px;
     height: 102.893px;
-    
+    color: #FFF;
     font-family: Montserrat;
     font-size: 20.285px;
     font-style: normal;
     font-weight: 500;
-    line-height: 170%; /* 34.485px */
+    line-height: 170%;
     letter-spacing: 0.304px;
+    margin: 0;
+
+}
+
+.contato {
     position: absolute;
-    margin-top: ;
-    padding: 0;
+    top: 63px;
+    left: 1135px;
+    right: 136px;
+    bottom: 813.95px;
+    width: 169px;
+    height: 23.045px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 19.205px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+
+}
+
+.icon {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 66px;
+    left: 1102px;
+    right: 319px;
+    bottom: 815px;
+    margin: 0;
 }
