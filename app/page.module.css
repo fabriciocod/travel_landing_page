@@ -5,10 +5,23 @@
     border-radius: 88.166px;
     color: #FFF;
     font-size: 21px;
-    position: absolute;
     height: 56.426px;
+    position: absolute;
     width: 298px;
-    
-    
-    
+        
+}
+
+.card{
+    background-color:#FAFAFA;
+    border-radius:7px;
+    flex-shrink: 0;
+    filter: blur(0.6000000238418579px);
+    width: 269px;
+    height: 169px;
+}
+
+.localidade{
+    color: #122330;
+    font-size: 16.071px;
+    margin: 0;
 }
