@@ -15,7 +15,7 @@
     background-color:#FAFAFA;
     border-radius:7px;
     flex-shrink: 0;
-    filter: blur(0.6000000238418579px);
+    filter: blur(.3px);
     height: 169px;
     width: 239px;
     
