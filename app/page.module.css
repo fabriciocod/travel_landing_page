@@ -16,12 +16,24 @@
     border-radius:7px;
     flex-shrink: 0;
     filter: blur(0.6000000238418579px);
-    width: 269px;
     height: 169px;
+    width: 239px;
+    
 }
 
 .localidade{
     color: #122330;
     font-size: 16.071px;
     margin: 0;
+}
+
+.cards{
+    display: flex; /* coloca elementos na posição horinzontal*/
+    gap: 26px; /* defini espaço entre os cards*/
+    position: absolute;
+    justify-content: flex-start;/* o gap deve ser usado com flex-start, mas também é opcional*/
+    /*justify-content: space-between; primeira forma de ajusta espaçamento dos cards
+    width: 769px;*/
+   
+
 }
