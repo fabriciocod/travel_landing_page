@@ -68,6 +68,7 @@ export default function RootLayout({ children }) {
       <body  className={styles.corpo}>
         <header>
           <Logo x={135} y={53}/>
+          
           <Menu x={435} y={60}>
             
             <ItemMenu nome="Home"/>

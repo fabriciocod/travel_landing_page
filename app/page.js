@@ -10,7 +10,7 @@ import bali from '../public/bali.png'
 function Botao({x,y}){
   return(
     <button style={{left: x, top: y}}className={styles.botao}>Start</button>
-  )
+  );
 }
 
 function Cards({x,y, children}){
@@ -18,17 +18,19 @@ function Cards({x,y, children}){
     <div style={{left: x, top: y}}className={styles.cards}>
       {children}
     </div>
-  )
+  );
 }
 
 function Card({localidade, imagem,}){
   return(
     <div className={styles.card}>
+      <div className={styles.cabecalhoCard}>
       <p className={styles.localidade}>{localidade}</p>
       <Image src={seta}/>
-      <Image src={imagem}/>
+      </div>
+      <Image className={styles.imagem} src={imagem}/>
     </div>
-  )
+  );
 }
 export default function Home() {
   return (
@@ -41,8 +43,5 @@ export default function Home() {
         <Card localidade="Bali" imagem={bali}/>
       </Cards>
     </>
-
-    
-      
-  )
+   );
 }
