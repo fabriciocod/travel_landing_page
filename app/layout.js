@@ -2,6 +2,9 @@ import './globals.css'
 import styles from './styles.module.css'
 // import { Quicksand } from 'next/font/google'
 import Image from 'next/image';
+import face from '../public/icon_face.svg'
+import twitter from '../public/icon_twitter.svg'
+import inkdi from '../public/icon_inkid.svg'
 
 
 export const metadata = {
@@ -62,6 +65,24 @@ function Contato({x, y}){
   );
 }
 
+function SocialMedia({x, y, children}){
+  return(
+    <div style={{left: x, top: y}}className={styles.socialMedia}>
+      {children}
+    </div>
+  );
+}
+
+function Media({imagem}){
+  return(
+    <div className={styles.media}>
+      <Image src={imagem}/>
+      
+    </div>
+
+  );
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -92,6 +113,17 @@ export default function RootLayout({ children }) {
           
         </main>
         
+        <footer>
+
+          <SocialMedia x={1175} y={843}>
+
+            <Media imagem={face}/>
+            <Media imagem={twitter}/>
+            <Media imagem={inkdi}/>
+
+          </SocialMedia>
+       
+        </footer>
       </body>
     </html>
   )

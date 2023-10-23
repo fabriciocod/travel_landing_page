@@ -6,7 +6,6 @@ import cyprus from '../public/cyprus.png'
 import bali from '../public/bali.png'
 
 
-
 function Botao({x,y}){
   return(
     <button style={{left: x, top: y}}className={styles.botao}>Start</button>
@@ -31,6 +30,7 @@ function Card({localidade, imagem,}){
       <Image className={styles.imagem} src={imagem}/>
     </div>
   );
+
 }
 export default function Home() {
   return (
@@ -42,6 +42,7 @@ export default function Home() {
         <Card localidade="Cyprus" imagem={cyprus}/>
         <Card localidade="Bali" imagem={bali}/>
       </Cards>
+
     </>
    );
 }
