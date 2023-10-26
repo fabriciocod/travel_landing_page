@@ -1,3 +1,43 @@
+.titulo {
+    position: absolute;
+    top: 238px;
+    left: 135px;
+    right: 783.87px;
+    bottom: 470.96px;
+    width: 521.135px;
+    height: 191.042px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 78.65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133%;
+    letter-spacing: 1.966px;
+    margin: 0;
+
+}
+
+
+.texto {
+
+    position: absolute;
+    top: 465.04px;
+    left: 136px;
+    right: 760.95px;
+    bottom: 332.06px;
+    width: 543.047px;
+    height: 102.893px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20.285px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    letter-spacing: 0.304px;
+    margin: 0;
+
+}
+
 .botao{
     background: linear-gradient(94deg, #EED761 21.68%, #FFB9AF 79.85%);
     box-shadow: 0px 3.52663px 35.26627px 0px rgba(255, 185, 175, 0.50);

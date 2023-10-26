@@ -40,7 +40,7 @@ function Menu({children, x, y}){
 //aaaa
 
 //aaaa
-function Titulo({x, y}){
+/*function Titulo({x, y}){
   return (
     <h1 style={{left: x, top: y }} className={styles.titulo}>Your perfect honeymoon</h1>
   );
@@ -49,7 +49,7 @@ function Texto({x, y}){
   return (
     <h2 style={{left: x, top: y }} className={styles.texto}>Mayami is more than a honeymoon destination – it’s a perfect romantic spot for couples who like  spending time in beach. </h2>
   );
-}
+}*/
 //aaaaa
 function Icon({x, y}){
   return (
@@ -107,8 +107,8 @@ export default function RootLayout({ children }) {
         
         <main>
         
-          <Titulo></Titulo>
-          <Texto></Texto>
+          {/* <Titulo></Titulo>
+          <Texto></Texto> */}
           {children}
           
         </main>
