@@ -4,6 +4,8 @@ import hawaii from '../public/hawaii.png'
 import seta from '../public/arrow-right.svg'
 import cyprus from '../public/cyprus.png'
 import bali from '../public/bali.png'
+import ellipse from '../public/ellipse.svg'
+import nuvem from '../public/nuvem.png'
 
 function Titulo({x, y}){
   return (
@@ -40,8 +42,24 @@ function Card({localidade, imagem,}){
       <Image className={styles.imagem} src={imagem}/>
     </div>
   );
-
 }
+
+function Palmeira({x, y, children}){
+  return(
+    <div style={{left: x, top: y}}className={styles.palmeira}>
+      {children}
+    </div>
+  );
+}
+
+function Forma ({imagem}){
+  return(
+    <div className={styles.forma}>
+      <Image src={imagem}/>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -55,6 +73,12 @@ export default function Home() {
 
       <Titulo></Titulo>
       <Texto></Texto>
+
+      <Palmeira x={646} y={191}>
+
+          <Forma imagem={ellipse}/>
+          <Forma imagem={nuvem}/>
+      </Palmeira>
     </>
    );
 }
